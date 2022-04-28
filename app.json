@@ -1,0 +1,33 @@
+{
+    "name": "Instagram-Bot",
+    "description": "Telegram bot to manage your Instagram account.",
+    "keywords": [
+      "telegram",
+      "best",
+      "instagram",
+      "download",
+      "bot"
+    ],
+    "repository": "https://github.com/subinps/Instagram-Bot",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "Your bot token from @BotFather",
+        "value": ""
+      }
+      
+    },
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
